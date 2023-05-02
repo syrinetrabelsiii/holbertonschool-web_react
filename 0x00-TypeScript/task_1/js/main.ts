@@ -60,3 +60,24 @@ interface printTeacherFunction {
     (firstName: string, lastName: string): string;
   }
 
+  interface StudentClassConstructor {
+    new (firstName: string, lastName: string): StudentClassInterface;
+  }
+  
+  interface StudentClassInterface {
+    workOnHomework(): string;
+    displayName(): string;
+  }
+  
+  class StudentClass implements StudentClassInterface {
+    constructor(private firstName: string, private lastName: string) {}
+  
+    workOnHomework() {
+      return "Currently working";
+    }
+  
+    displayName() {
+      return this.firstName;
+    }
+  }
+  
