@@ -51,3 +51,7 @@ interface Teacher {
   });
   
   document.body.appendChild(table);
+
+  interface Directors extends Teacher {
+    numberOfReports: number;
+  }
