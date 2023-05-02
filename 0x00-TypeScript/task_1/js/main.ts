@@ -52,6 +52,11 @@ interface Teacher {
   
   document.body.appendChild(table);
 
-  interface Directors extends Teacher {
+interface Directors extends Teacher {
     numberOfReports: number;
   }
+
+interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
+  }
+
