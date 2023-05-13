@@ -1,0 +1,11 @@
+* {
+    font-family: 'Trabelsi';
+}
+
+:root {
+    --primary-color: #e0354b;
+}
+
+.App {
+    text-align: center;
+}
